@@ -394,7 +394,7 @@ footer>i:hover {
 
 /* Let's Make it Responsive  */
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
     nav {
         font-size: 1.2rem;
     }
