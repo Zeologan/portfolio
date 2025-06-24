@@ -507,8 +507,6 @@ footer>i:hover {
         margin-right: 0;
         line-height: 1;
     }
-<<<<<<< HEAD
-=======
 
     footer>.bxs-carets-down-up:before {
         content: none;
@@ -518,5 +516,4 @@ footer>i:hover {
         font-size: 1.1rem;
         font-weight: 400;
     }
->>>>>>> 67ecafcd58102bee923bc174828fe5d030b192b0
 }
