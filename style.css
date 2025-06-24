@@ -506,8 +506,4 @@ footer>i:hover {
         margin-right: 0;
         line-height: 1;
     }
-
-    .bxs-carets-down-up:before {
-        content: none;
-    }
 }
