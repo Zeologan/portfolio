@@ -50,6 +50,8 @@ nav>i {
 .profile-image h4 {
     width: 100%;
     position: absolute;
+    transform: scale(1.02);
+
     background-color: #fff;
     color: black;
     font-size: 25vw;
@@ -59,7 +61,6 @@ nav>i {
     line-height: 1;
     letter-spacing: 1.5rem;
     mix-blend-mode: screen;
-    overflow: hidden;
     height: 20vw;
 }
 
@@ -408,13 +409,13 @@ footer>i:hover {
     .profile-image p:nth-of-type(1) {
         font-size: 11px;
         top: -2px;
-        left: 9%;
+        left: 7vw;
     }
 
     .profile-image p:nth-of-type(2) {
         font-size: 11px;
         top: -20px;
-        right: 20%;
+        right: 17vw;
     }
 
     .profile-image {
@@ -494,20 +495,25 @@ footer>i:hover {
     }
 
     .col1-down {
-        font-size: 1rem;
+        font-size: 0.8rem;
         flex-direction: column;
         margin-top: 50px;
         align-items: start;
     }
 
     .footer-col2 h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         letter-spacing: 1rem;
         margin-right: 0;
         line-height: 1;
     }
 
-    .bxs-carets-down-up:before {
+    footer>.bxs-carets-down-up:before {
         content: none;
+    }
+
+    .col1-up>h5 {
+        font-size: 1.1rem;
+        font-weight: 400;
     }
 }
