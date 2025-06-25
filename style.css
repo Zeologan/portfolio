@@ -51,7 +51,6 @@ nav>i {
     width: 100%;
     position: absolute;
     transform: scale(1.02);
-
     background-color: #fff;
     color: black;
     font-size: 25vw;
@@ -85,6 +84,7 @@ nav>i {
     right: 29%;
 }
 
+
 /* about-section  */
 .layout-box {
     margin: 0 3.5rem;
@@ -104,9 +104,10 @@ nav>i {
 }
 
 .about-col p {
-    width: 500px;
-    font-size: 11px;
+    max-width: 500px;
+    font-size: 12px;
     font-weight: 400;
+    line-height: 1.4;
 }
 
 .achivement {
@@ -124,16 +125,18 @@ nav>i {
     border: none;
 }
 
-.achivement-col p:first-child {
+.achivement-col .counter {
     font-size: 3rem;
     color: #555;
 }
+
 
 /* recent-work */
 .recent-work>p {
     margin-top: 2rem;
     text-align: center;
     font-size: 12px;
+    line-height: 1.4;
 }
 
 .recent-worked {
@@ -187,6 +190,51 @@ nav>i {
     object-fit: cover;
 }
 
+/* skill section  */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.left a {
+    color: #999;
+    text-decoration: underline;
+}
+
+.right {
+    flex: 1;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
 /* Award */
 .award-section {
     display: flex;
@@ -228,7 +276,6 @@ nav>i {
 
 
 /* Scroll Effect  */
-
 .slider {
     margin-top: 20px;
     width: 100%;
@@ -274,6 +321,9 @@ nav>i {
         left: calc(var(--width) * -1);
     }
 }
+
+
+/* Footer Section  */
 
 footer {
     padding: 1rem 0;
@@ -393,6 +443,8 @@ footer>i:hover {
 }
 
 
+
+
 /* Let's Make it Responsive  */
 
 @media (max-width: 768px) {
@@ -435,6 +487,24 @@ footer>i:hover {
         width: 300px;
     }
 
+    .skill-container {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .left h1{
+        font-size: 2rem;
+    }
+
+    .right{
+        min-width: 300px;
+    }
+
+    canvas {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
     .achivement {
         display: flex;
         justify-content: flex-end;
@@ -445,13 +515,13 @@ footer>i:hover {
         padding-right: 10px;
     }
 
-    .achivement-col p:first-child {
-        font-size: 2rem;
-        color: #555;
+    .achivement-col > p:last-child{
+        font-size: 12px;
     }
 
-    .achivement-col p:last-child {
-        font-size: 11px;
+    .achivement-col .counter {
+        font-size: 2rem;
+        color: #555;
     }
 
     .recent-worked {
