@@ -1,3 +1,7 @@
+// Resume 
+document.getElementById('resumeLink').href = 'asset/Rohit Ratate Frontend Developer Resume.pdf';
+
+// Scroll to Top 
 function scrollToTop(val) {
   targetClass = val.dataset.scroll;
   const elements = document.getElementsByClassName(targetClass);
@@ -7,6 +11,7 @@ function scrollToTop(val) {
   }
 }
 
+// js Canvas animation 
 window.onload = function () {
   if (
     !TagCanvas.Start("myCanvas", "tagList", {
@@ -27,3 +32,5 @@ window.onload = function () {
     document.getElementById("myCanvasContainer").style.display = "none";
   }
 };
+
+

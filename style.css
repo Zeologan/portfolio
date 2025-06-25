@@ -109,6 +109,20 @@ nav>i {
     font-weight: 400;
     line-height: 1.4;
 }
+.download{
+    cursor: pointer;
+    display: flex; 
+    gap: 5px;
+    align-items: center;
+    color: #000;
+    i{
+        font-size: 1rem;
+    }
+}
+
+#resumeLink{
+    text-decoration: none;
+}
 
 .achivement {
     display: flex;
@@ -127,7 +141,7 @@ nav>i {
 
 .achivement-col .counter {
     font-size: 3rem;
-    color: #555;
+    color: #333;
 }
 
 
@@ -214,7 +228,8 @@ nav>i {
 }
 
 .left a {
-    color: #999;
+    color: #000;
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -488,7 +503,7 @@ footer>i:hover {
     }
 
     .skill-container {
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
     }
 
