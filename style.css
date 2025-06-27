@@ -173,6 +173,9 @@ nav>i {
     overflow: hidden;
     transition: 0.5s;
     filter: brightness(0);
+    cursor: pointer;
+    position: relative;
+
 }
 
 .recent-worked .item:hover {
