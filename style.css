@@ -109,18 +109,20 @@ nav>i {
     font-weight: 400;
     line-height: 1.4;
 }
-.download{
+
+.download {
     cursor: pointer;
-    display: flex; 
+    display: flex;
     gap: 5px;
     align-items: center;
     color: #000;
-    i{
+
+    i {
         font-size: 1rem;
     }
 }
 
-#resumeLink{
+#resumeLink {
     text-decoration: none;
 }
 
@@ -507,11 +509,11 @@ footer>i:hover {
         align-items: center;
     }
 
-    .left h1{
+    .left h1 {
         font-size: 2rem;
     }
 
-    .right{
+    .right {
         min-width: 300px;
     }
 
@@ -530,7 +532,7 @@ footer>i:hover {
         padding-right: 10px;
     }
 
-    .achivement-col > p:last-child{
+    .achivement-col>p:last-child {
         font-size: 12px;
     }
 
@@ -543,15 +545,15 @@ footer>i:hover {
         flex-direction: column;
         transform-style: unset;
         transform: none;
+        height: 800px;
     }
 
     .recent-worked .item {
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 3px;
         overflow: hidden;
         transition: .2 all;
-        /* keep images visible */
         transform: none;
     }
 
