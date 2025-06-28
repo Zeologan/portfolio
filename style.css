@@ -462,6 +462,25 @@ footer>i:hover {
 }
 
 
+/* Auto Display Animation  */
+
+.autoDisplay {
+    animation: autoDisplayAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoDisplayAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 
 
 /* Let's Make it Responsive  */
