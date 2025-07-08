@@ -575,6 +575,7 @@ footer>i:hover {
         border-radius: 3px;
         overflow: hidden;
         transition: .2 all;
+        filter: grayscale(100%) brightness(0.4);
         transform: none;
     }
 
