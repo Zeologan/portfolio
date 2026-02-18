@@ -1,7 +1,8 @@
-// Resume 
-document.getElementById('resumeLink').href = 'asset/Rohit Ratate Frontend Developer Resume.pdf';
+// Resume
+document.getElementById("resumeLink").href =
+  "asset/Rohit Ratate Frontend Developer Resume.pdf";
 
-// Scroll to Top 
+// Scroll to Top
 function scrollToTop(val) {
   targetClass = val.dataset.scroll;
   const elements = document.getElementsByClassName(targetClass);
@@ -11,26 +12,27 @@ function scrollToTop(val) {
   }
 }
 
-// js Canvas animation 
-window.onload = function () {
-  if (
-    !TagCanvas.Start("myCanvas", "tagList", {
-      textColour: "#000000", 
-      font: 'Montserrat, sans-serif',
-      reverse: true,
-      depth: 0.8,
-      maxSpeed: 0.05,
-      initial: [0.1, -0.1],
-      wheelZoom: false,
-      freezeActive: true,
-      shuffleTags: true,
-      noSelect: true,
-      clickToFront: 500,
-    })
-  ) {
-    // TagCanvas failed to load
-    document.getElementById("myCanvasContainer").style.display = "none";
-  }
-};
+// js Canvas animation
 
-
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    if (
+      !TagCanvas.Start("myCanvas", "tagList", {
+        textColour: "#000000",
+        font: "Montserrat, sans-serif",
+        reverse: true,
+        depth: 0.8,
+        maxSpeed: 0.05,
+        initial: [0.1, -0.1],
+        wheelZoom: false,
+        freezeActive: true,
+        shuffleTags: true,
+        noSelect: true,
+        clickToFront: 500,
+      })
+    ) {
+      // TagCanvas failed to load
+      document.getElementById("myCanvasContainer").style.display = "none";
+    }
+  }, 1000);
+});
